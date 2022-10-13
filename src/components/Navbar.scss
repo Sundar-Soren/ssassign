@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+  border-bottom: 1px solid black;
+  align-items: center;
+  position: fixed;
+  width: 95%;
+  background-color: white;
+  z-index: 99999;
+  ul {
+    display: flex;
+    gap: 2.5rem;
+    li {
+      list-style: none;
+      font-weight: 600;
+    }
+  }
+  .nav_right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    button {
+      height: max-content;
+      background-color: #2cffff;
+      border: 1px solid black;
+      padding: 0.7rem 2rem;
+      font-weight: 700;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+    p {
+      font-weight: 600;
+      cursor: pointer;
+      &:hover {
+        color: #4040ee;
+      }
+    }
+  }
+}

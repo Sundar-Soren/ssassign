@@ -1,0 +1,64 @@
+.Frame4 {
+  margin: 0;
+  border-top: 7px solid black;
+  color: white;
+  margin-bottom: 5rem;
+  .container {
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+    background-color: black;
+    height: 70vh;
+    width: 80%;
+    margin-left: auto;
+    transform: translateY(-0.2rem);
+    .inner_container {
+      width: 70%;
+      margin: 0 auto;
+      padding: 8rem 0;
+
+      .heading {
+        line-height: 1;
+        h3 {
+          font-size: 1.6rem;
+        }
+        h1 {
+          font-size: 5rem;
+          span {
+            color: #ff5ae5;
+          }
+        }
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      .buttons {
+        margin-top: 2rem;
+        display: flex;
+        gap: 0.1rem;
+        button {
+          padding: 0.6rem 1.5rem;
+          background-color: #ffff05;
+          color: black;
+          border-radius: 20px;
+          font-size: 1.1rem;
+          border: none;
+        }
+        .se {
+          background-color: #fff;
+        }
+      }
+      position: relative;
+      &::before {
+        content: "";
+        height: 20rem;
+        width: 1px;
+        background-color: white;
+        color: white;
+        position: absolute;
+        transform: rotate(6.5deg);
+        left: -4rem;
+        top: 8rem;
+        z-index: 99999;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.Frame9 {
+  padding: 5rem 0;
+  .Frame9_container {
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      span {
+        color: #ff5ae5;
+      }
+    }
+    div {
+      display: flex;
+      gap: 2rem;
+      padding: 3rem 0;
+      justify-content: center;
+    }
+  }
+}

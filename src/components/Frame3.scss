@@ -1,0 +1,81 @@
+.Frame3 {
+  padding: 5rem 0;
+  .container {
+    // background-image: url(https://www.drift.com/wp-content/uploads/2022/03/homepage-grain@1.5x.jpg);
+    display: flex;
+    align-items: center;
+    .section1_container {
+      width: 1250px;
+      margin: 0 auto;
+      display: flex;
+      // transform: translateX(1rem);
+      .left {
+        padding: 5rem;
+        background-color: #2cffff;
+        width: 70%;
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        line-height: 1;
+        // transform: translateX(1rem);
+        h2 {
+          font-size: 2rem;
+          line-height: 1;
+          font-weight: 400;
+          padding: 0.5rem 0;
+          position: relative;
+          &::before {
+            content: "\22";
+            position: absolute;
+            top: -1rem;
+            font-size: 3rem;
+            font-weight: 700;
+          }
+        }
+        div {
+          // line-height: 0.1;
+          margin-top: 1rem;
+          h1 {
+            font-weight: 800;
+            font-size: 3.5rem;
+          }
+          p {
+            font-size: 1.6rem;
+            font-weight: 600;
+            font-style: italic;
+          }
+        }
+      }
+      position: relative;
+      &::before {
+        content: "";
+        height: 120%;
+        width: 4px;
+        background-color: black;
+        color: black;
+        position: absolute;
+        transform: rotate(6.5deg);
+        right: 21.8rem;
+        top: -2.6rem;
+        z-index: 99999;
+      }
+    }
+    .right {
+      width: 30%;
+      position: relative;
+      z-index: 1;
+      background-image: url(https://www.drift.com/wp-content/uploads/2022/03/nathan.png);
+      background-position: center;
+      background-size: cover;
+      clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+      transform: translateX(-3rem);
+      position: relative;
+      z-index: 99;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 70%;
+        width: 75%;
+      }
+    }
+  }
+}

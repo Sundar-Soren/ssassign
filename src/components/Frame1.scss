@@ -1,0 +1,79 @@
+.Frame1 {
+  border-bottom: 5px solid black;
+  padding-bottom: 5rem;
+  padding-top: 10rem;
+  .heading {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1;
+    h1 {
+      font-size: 4rem;
+      font-weight: 800;
+    }
+    .lastH {
+      font-size: 7rem;
+      line-height: 1;
+    }
+  }
+  .section1 {
+    background-image: url(https://www.drift.com/wp-content/uploads/2022/03/homepage-grain@1.5x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    transform: translateY(-0.5rem);
+    .section1_container {
+      width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      .left {
+        background-color: #ffff05;
+        width: 40%;
+        padding: 45px 100px 45px 38px;
+        clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+        h1 {
+          font-size: 2rem;
+          line-height: 1;
+          span {
+            font-weight: 400;
+          }
+        }
+        button {
+          height: max-content;
+          background-color: #2cffff;
+          border: 1px solid black;
+          padding: 0.7rem 2rem;
+          font-weight: 700;
+          border-radius: 1rem;
+          cursor: pointer;
+          margin-top: 2rem;
+        }
+      }
+      .right {
+        width: 60%;
+        position: relative;
+        z-index: 1;
+        img {
+          height: 100%;
+          transform: translateX(-2.5rem);
+          //   object-fit: contain;
+          width: 120%;
+        }
+        &::before {
+          content: "";
+          height: 34rem;
+          width: 2px;
+          background-color: black;
+          color: black;
+          z-index: 9;
+          position: absolute;
+          top: -3.6rem;
+          left: -1.4rem;
+          transform: rotate(5.3deg);
+        }
+      }
+    }
+  }
+}
